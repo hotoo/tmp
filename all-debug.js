@@ -79,7 +79,7 @@ zpmjs.define("tracker/2.0.2/tracker-debug", function(require, exports, module) {
   version = '1.0';
 
   var doc = win.document;
-  var loc = doc.location;
+  var loc = win.location;
   var performance = win.performance;
 
   var startTime;
@@ -346,7 +346,6 @@ zpmjs.define("tracker/2.0.2/tracker-debug", function(require, exports, module) {
       data.screen = screen.width + "x" + screen.height;
       data.sc = screen.colorDepth + "-bit";
     }
-    var loc = location;
      alert(loc == location);
      alert(loc === location);
     data.utmhn = loc.hostname;
