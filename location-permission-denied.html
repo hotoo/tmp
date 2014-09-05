@@ -244,9 +244,9 @@ if (!window._to) {
 
 
 
-  <script charset="utf-8" src="all-debug.js"></script>
+  <script charset="utf-8" src="https://a.test.alipay.net/??tracker-all/2.0.0/all.js,alipay/smartracker/2.0.0/smartracker.js"></script>
   <script>
-  zpmjs.use(["tracker/2.0.2/tracker-debug"], function(Tracker){
+  zpmjs.use(["tracker/2.0.2/tracker"], function(Tracker){
     window.Tracker = Tracker;
   });
   </script>
@@ -802,7 +802,7 @@ function triggerTracker(errorMap) {
 <!-- CMS:tracker js引用开始:alipay/tracker/tracker.vm -->
 
 <script type="text/javascript">
-window.zpmjs && zpmjs.use(["tracker/2.0.2/tracker-debug"], function(Tracker){
+window.zpmjs && zpmjs.use(["tracker/2.0.2/tracker"], function(Tracker){
   window.Tracker = Tracker;
 
   Tracker.start();
