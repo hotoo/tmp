@@ -346,8 +346,7 @@ zpmjs.define("tracker/2.0.2/tracker-debug", function(require, exports, module) {
       data.screen = screen.width + "x" + screen.height;
       data.sc = screen.colorDepth + "-bit";
     }
-
-    data.utmhn = loc.hostname;
+    data.utmhn = location.hostname;
 
     if (win.analytic_var) {
       data.ana = analytic_var;
