@@ -2,7 +2,7 @@
 zpmjs.define("tracker/2.0.2/tracker",function(e,t,n){function r(){return Date.now?Date.now():(new Date).getTime()}function o(e){var t=[];for(var n in e)if(n&&e.hasOwnProperty(n)){var r=Z(n),o=String(e[n]);""!==o&&(r+="="+Z(o)),t.push(r)}return t.join("&")}function a(e,t){var n;if(e&&1===e.nodeType&&(n=e.getAttribute))try{return n.call(e,t,2)}catch(r){}return null}function c(e,t){return e&&1===e.nodeType&&e.hasAttribute?e.hasAttribute(t):null===a(e,t)}function i(){return/\bcna=/.test(document.cookie)}function u(e,t){for(var n=0,r=e.length;r>n;n++)if(e[n]===t)return e.splice(n,1),e;return e}function f(e){P.push(e);var t=new Image(1,1);t.onload=t.onerror=t.onabort=function(){u(P,e),t=t.onload=t.onerror=t.onabort=null},t.src=e}function s(e,t,n){e&&(e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,function(t){n.call(e,t)}))}function d(e){var t=e.target||e.srcElement;try{if(t&&3===t.nodeType)return t.parentNode}catch(n){}return t}function l(e,t){t[O]=e,t.r=p(),t.v=version,J.emit("log:"+e,t);var n=o(t);if(f(Q+"?"+n),z[e]=t.pg,!i()){var r=o({url:X+"?"+n});f(W+"?"+r)}}function m(e,t){return l(e,{ref:z[e]||E,pg:N+"?seed="+Z(t)})}function p(){return Math.random()}function v(){var e=b.parent===b?C:H,t={ref:U||"-",pg:E,screen:"-x-",color:"-",BIProfile:"page"};
 
 (location.hostname);
-//console.log(_.hostname);
+(_.hostname);
 return;
 
 b.screen&&(t.screen=screen.width+"x"+screen.height,t.sc=screen.colorDepth+"-bit"),t.utmhn=_.hostname,b.analytic_var&&(t.ana=analytic_var,m(S,"deprecated-api-tracker-analytic_var"));
