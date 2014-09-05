@@ -79,7 +79,7 @@ zpmjs.define("tracker/2.0.2/tracker-debug", function(require, exports, module) {
   version = '1.0';
 
   var doc = win.document;
-  var loc = win.location;
+  var loc = doc.location;
   var performance = win.performance;
 
   var startTime;
