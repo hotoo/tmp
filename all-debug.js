@@ -349,7 +349,7 @@ zpmjs.define("tracker/2.0.2/tracker-debug", function(require, exports, module) {
      //alert(loc == location);
      //alert(loc === location);
 
-    loc.hostname;
+    alert(loc.hostname);
     //data.utmhn = loc.hostname;
 
     if (win.analytic_var) {
