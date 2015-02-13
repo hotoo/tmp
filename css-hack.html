@@ -12,26 +12,27 @@
 </head>
 <body>
 <div class="demo text">TEXT</div>
-<div>
-  <span class="all">ALL</span>
-  <span class="ie8910">IE8,9,10</span>
-  <span class="ie">IE</span>
-  <span class="ie89">IE8,9</span>
-  <span class="ie67">IE6,7</span>
-  <span class="ie6">IE6</span>
-  <span class="ie7">IE7</span>
-  <span class="ie9">IE9</span>
-</div>
+<ul>
+  <li><span class="all"></span> ALL</li>
+  <li><span class="ie8910"></span> IE8,9,10</li>
+  <li><span class="ie"></span> IE</li>
+  <li><span class="ie89"></span> IE8,9</li>
+  <li><span class="ie67"></span> IE6,7</li>
+  <li><span class="ie6"></span> IE6</li>
+  <li><span class="ie7"></span> IE7</li>
+  <li><span class="ie9"></span> IE9</li>
+</ul>
 <style>
 .demo {width: 200px;height: 200px;}
-.all{background: #fac;}/*各浏览器都认识，主要给高级浏览器用*/
-.ie8910{background: #F66600\0;} /* ie10、9、8 */
-.ie{background: #FFF\9;} /* 所有的 ie */
-.ie89{background:#999999\0\9;} /* \0\9 或 \9\0 IE8、9 */
-.ie67{+background: yellow;} /* ie7、6 +号同*号 */
-.ie6{_background:#CCCCCC;} /* ie6 */
-*+html .ie7{background: #282828;}/*ie7*/
-:root .ie9{background: blue\9;} /*ie9*/
+li span {width: 16px; height: 16px; border: 1px solid #ccc; display:inline-block;}
+.all{background: #00a000;}/*各浏览器都认识，主要给高级浏览器用*/
+.ie8910{background: #00a000\0;} /* ie10、9、8 */
+.ie{background: #00a000\9;} /* 所有的 ie */
+.ie89{background:#00a000\0\9;} /* \0\9 或 \9\0 IE8、9 */
+.ie67{+background: 00a000;} /* ie7、6 +号同*号 */
+.ie6{_background:#00a000;} /* ie6 */
+*+html .ie7{background: #00a000;}/*ie7*/
+:root .ie9{background: 00a000\9;} /*ie9*/
 </style>
 
 
