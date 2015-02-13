@@ -17,7 +17,9 @@
   <li><span class="ie8910"></span> IE8,9,10</li>
   <li><span class="ie"></span> IE</li>
   <li><span class="ie89"></span> IE8,9</li>
+  <li><span class="ie89_2"></span> IE8,9</li>
   <li><span class="ie67"></span> IE6,7</li>
+  <li><span class="ie67_2"></span> IE6,7</li>
   <li><span class="ie6"></span> IE6</li>
   <li><span class="ie7"></span> IE7</li>
   <li><span class="ie9"></span> IE9</li>
@@ -29,10 +31,12 @@ li span {width: 16px; height: 16px; border: 1px solid #ccc; display:inline-block
 .ie8910{background: #00a000\0;} /* ie10、9、8 */
 .ie{background: #00a000\9;} /* 所有的 ie */
 .ie89{background:#00a000\0\9;} /* \0\9 或 \9\0 IE8、9 */
-.ie67{+background: 00a000;} /* ie7、6 +号同*号 */
+.ie89_2{background:#00a000\9\0;} /* \0\9 或 \9\0 IE8、9 */
+.ie67{+background: #00a000;} /* ie7、6 +号同*号 */
+.ie67_2{*background: #00a000;} /* ie7、6 +号同*号 */
 .ie6{_background:#00a000;} /* ie6 */
 *+html .ie7{background: #00a000;}/*ie7*/
-:root .ie9{background: 00a000\9;} /*ie9*/
+:root .ie9{background: #00a000\9;} /*ie9*/
 </style>
 
 
